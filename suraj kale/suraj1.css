@@ -1,0 +1,24 @@
+*{
+    box-sizing:border-box;
+}
+#items
+{
+border: 1px solid red;
+display: grid;
+width: max-content;
+
+place-items:center;
+
+}
+.item{
+    height: 100%;
+    width:100% ;
+    padding: 50px;
+    border-radius: 50px;
+background-image: url(imges/suraj.jpg);
+background-size: cover;
+border: 1px solid black;
+color: aliceblue;
+
+}
+

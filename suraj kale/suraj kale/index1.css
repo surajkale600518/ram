@@ -1,0 +1,44 @@
+body{
+    background-image: url(imges/suraj.jpg);
+    background-size: cover;
+}
+ul {
+  list-style-type: none;
+  margin: 5;
+  padding:0px;
+  margin-left:0px;
+  overflow: hidden;
+  background-color: lightgray;
+  position: ;
+}
+.box{
+  text-align: center;
+  color: aliceblue;
+}
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: blue;
+ font-size:20px;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+.active{
+    background-color: gray;
+    color: white;
+    }
+    li a:hover {
+      background-color: orange;
+      color: white;
+    }
+    .suraj input img select{
+    position:relative;
+   position: fixed;
+    }
+    p{
+      color: aliceblue;
+    }
