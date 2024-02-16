@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="text/javascript" src="path-to-javascript-file.js"></script>
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #068;
+      }
+      img {
+        padding: 50px;
+        border-radius: 50%;
+        animation: fananim linear infinite;
+      }
+      button {
+        cursor: pointer;
+        width: 100px;
+        height: 100px;
+        padding: 20px 30px;
+        margin: 0 20px;
+        font-weight: 550;
+        border: none;
+        border-radius: 50%;
+        transition: 0.1s;
+      }
+      button:active {
+        box-shadow: 0px 10px 10px black;
+        transform: scale(0.95);
+      }
+      .main button:nth-last-child(5) {
+        background-color: rgb(0, 255, 0);
+      }
+      .main button:nth-last-child(5) {
+        background-color: red;
+      }
+      @keyframes fananim {
+        100% {
+          transform: rotate(560deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <img id="img" src="fan.png" alt="" srcset="" />
+      <button onclick="myfunon()">ON</button>
+      <button onclick="myfunoff()">OFF</button>
+      <button onclick="myfun1()">1</button>
+      <button onclick="myfun2()">2</button>
+      <button onclick="myfun3()">4</button>
+    </div>
+    <script>
+      let a = document.getElementById("img");
+      function myfunon() {
+        a.style.animationDuration = 3 + "s";
+      }
+      function myfunoff() {
+        a.style.animationDuration = 0 + "s";
+      }
+      function myfun1() {
+        a.style.animationDuration = 1 + "s";
+      }
+      function myfun2() {
+        a.style.animationDuration = 0.5 + "s";
+      }
+      function myfun3() {
+        a.style.animationDuration = 0.1 + "s";
+      }
+    </script>
+  </body>
+</html>
